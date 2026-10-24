@@ -42,6 +42,8 @@ Ostatnie polecenie wymaga zainstalowanego GCC pod tą nazwą. Skrypt tworzy i us
 
 Krótkie fragmenty kodu w tekście pokazują wybrane instrukcje i pomijają nagłówki lub otaczającą funkcję. Kompletne programy znajdują się w `examples/`.
 
+Pliki `.clang-format` i `.clang-tidy` opisują styl i kontrolę statyczną kodu w `examples/`. Nie są potrzebne do nauki. Formatowanie: `clang-format -i examples/*.cpp`. Analiza: `clang-tidy examples/01_basics.cpp -- -std=c++17`.
+
 ## A. Podstawy: po co i jak?
 
 ### 1. Co daje `std::variant`?
