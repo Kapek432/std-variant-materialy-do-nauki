@@ -4,7 +4,7 @@
 
 - Wszystkie programy napisano w **C++17**. 
 
-- Potrzebujesz podstaw funkcji, struktur i referencji
+- Potrzebujesz podstaw funkcji, struktur i referencji.
 
 - Lambdy oraz użyte tu elementy szablonów wyjaśniamy po drodze.
 
@@ -21,7 +21,7 @@ Notebook korzysta z kernela Python 3 i lokalnego kompilatora C++17. Kod C++ jest
 
 ## Uruchomienie
 
-Potrzebujesz kompilatora i biblioteki standardowej obsługujących C++17. W terminalu przejdź do katalogu `variant/`, a potem wykonaj:
+Potrzebujesz kompilatora i biblioteki standardowej obsługujących C++17. W terminalu przejdź do katalogu repozytorium, a potem wykonaj:
 
 ```bash
 c++ -std=c++17 -Wall -Wextra -Wpedantic examples/01_basics.cpp -o /tmp/variant_basics

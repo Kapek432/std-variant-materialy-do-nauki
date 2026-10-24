@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# Uruchom z dowolnego katalogu: bash /sciezka/do/variant/check.sh
+# Uruchom z dowolnego katalogu: bash /sciezka/do/check.sh
 set -euo pipefail
 cd -- "$(dirname -- "$0")"
 compiler="${CXX:-c++}"
