@@ -1,0 +1,4 @@
+sukces: 42
+blad: brak cyfr
+blad: znaki po liczbie
+blad: liczba poza zakresem int

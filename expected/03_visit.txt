@@ -1,0 +1,4 @@
+wartosc: 12
+liczba + 1: 13
+wartosc: kot
+dlugosc: 3

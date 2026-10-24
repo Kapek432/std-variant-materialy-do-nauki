@@ -1,0 +1,11 @@
+Checks: >-
+  -*,
+  clang-analyzer-*,
+  bugprone-*,
+  performance-*,
+  readability-braces-around-statements,
+  readability-misleading-indentation,
+  modernize-use-nullptr
+WarningsAsErrors: '*'
+CheckOptions:
+  bugprone-exception-escape.CheckMain: 'false'

@@ -1,0 +1,8 @@
+stan: rozlaczony
+zdarzenie pominiete
+stan: rozlaczony
+stan: laczenie z example.org
+stan: polaczony z example.org
+zdarzenie pominiete
+stan: polaczony z example.org
+stan: rozlaczony

@@ -1,0 +1,7 @@
+monostate: 0
+NoDefault: 7
+duplikaty: index=1, value=9
+wyjatek przy przenoszeniu
+valueless: true
+visit: bad_variant_access
+po naprawie: 10

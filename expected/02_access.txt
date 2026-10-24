@@ -1,0 +1,5 @@
+get<int>: 7
+holds string: false
+get_if<string>: nullptr
+get<string>: bad_variant_access
+get_if<string>: gotowe
