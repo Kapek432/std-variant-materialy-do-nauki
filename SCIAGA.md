@@ -44,7 +44,7 @@ std::visit(
 );
 ```
 
-Odwiedzający musi obsłużyć każdy dopuszczalny typ; przy kilku wariantach - każdą kombinację typów. W C++17 wszystkie wywołania muszą mieć zgodny typ i kategorię wyniku. Osobne lambdy można połączyć pomocniczym `overloaded` z [materiału głównego](README.md#5-overloaded-kilka-lambd-jako-jeden-odwiedzający).
+Odwiedzający musi obsłużyć każdy dopuszczalny typ; przy kilku wariantach - każdą kombinację typów. W C++17 wszystkie wywołania muszą mieć zgodny typ i kategorię wyniku. Osobne lambdy można połączyć pomocniczym `overloaded` z [materiału głównego](PRZEWODNIK.md#5-overloaded-kilka-lambd-jako-jeden-odwiedzający).
 
 ## Najważniejsze pułapki
 
@@ -70,4 +70,4 @@ Odwiedzający musi obsłużyć każdy dopuszczalny typ; przy kilku wariantach - 
 
 - rozszerzalna hierarchia obiektów -> rozważ polimorfizm.
 
-[Pełne objaśnienia](README.md) · [Notebook z wynikami](variant.ipynb) · [Źródła](references.md)
+[Pełne objaśnienia](PRZEWODNIK.md) · [Notebooki z wynikami](notebooks/00_start.ipynb) · [Źródła](references.md)

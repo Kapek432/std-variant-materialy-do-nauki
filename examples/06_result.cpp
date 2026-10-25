@@ -35,7 +35,7 @@ Result parse_int(const std::string& input) {
 }
 
 int main() {
-    const std::string inputs[] = {"42", "abc", "12x", std::string(100, '9')};
+    const std::string inputs[] = {"3", "abc", "12x", std::string(100, '9')};
     for (const auto& input : inputs) {
         const Result result = parse_int(input);
         std::visit(

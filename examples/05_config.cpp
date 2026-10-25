@@ -7,7 +7,7 @@
 int main() {
     using ConfigValue = std::variant<bool, int, std::string>;
     const std::map<std::string, ConfigValue> config{
-        {"debug", true}, {"retries", 3}, {"server", std::string{"localhost"}}
+        {"debug", true}, {"retries", 3}, {"server", std::string{"example.org"}}
     };
     std::cout << std::boolalpha;
     for (const auto& entry : config) {

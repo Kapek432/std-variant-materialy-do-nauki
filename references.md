@@ -1,27 +1,56 @@
-# Warto przeczytać - std::variant na przykładach
+# Artykuły i dokumentacja do std::variant
 
-## 1. Wprowadzenie i praktyczne zastosowania
+Artykuły pomagają zrozumieć temat na przykładach. Dokumentacja służy do sprawdzenia konkretnej operacji. Te same odnośniki znajdziesz na końcu odpowiednich notebooków.
 
-[Everything You Need to Know About std::variant from C++17 - C++ Stories](https://www.cppstories.com/2018/06/variant/)
+## 01. Podstawy i odczyt
 
-Przekrojowy przewodnik: tworzenie wariantu, zmiana wartości, odczyt i odwiedzanie. Dalej pokazuje zastosowania, m.in. obsługę błędów i maszynę stanów drzwi. Przy przykładach są wyniki oraz linki do uruchomienia kodu w przeglądarce. Dobry punkt wyjścia do części A i B naszego materiału.
+### Artykuły
 
-## 2. Skąd się bierze pomocnik overloaded?
+- [C++ Stories: Everything You Need to Know About std::variant](https://www.cppstories.com/2018/06/variant/) - wprowadzenie i praktyczne zastosowania.
 
-[2 Lines Of Code and 3 C++17 Features - The overload Pattern - C++ Stories](https://www.cppstories.com/2019/02/2lines3featuresoverload.html/)
+### Dokumentacja
 
-Rozkłada dwuwierszowy pomocnik na zrozumiałe elementy: lambdy, dziedziczenie, zapis `using` i dedukcję argumentów szablonu. Pokazuje, jak kilka lambd zastępuje osobno napisaną klasę odwiedzającą. Uzupełnienie części B.5, jeśli sam zapis `overloaded` nadal wygląda zagadkowo.
+- [std::variant](https://en.cppreference.com/cpp/utility/variant) - operacje i wymagania wariantu.
+- [std::get](https://en.cppreference.com/cpp/utility/variant/get) - odczyt przez typ lub indeks.
+- [std::get_if](https://en.cppreference.com/cpp/utility/variant/get_if) - odczyt przez wskaźnik i nullptr.
 
-## 3. Dwa warianty naraz: przedmioty i pudełka
+## 02. Visit i overloaded
 
-[How To Use std::visit With Multiple Variants and Parameters - C++ Stories](https://www.cppstories.com/2018/09/visit-variants/)
+### Artykuły
 
-Konkretny przykład dobierania pudełka do rodzaju przedmiotu pokazuje, jak `visit` obsługuje kombinacje dwóch typów. Artykuł zawiera ilustrację przykładu, kod do uruchomienia w Compiler Explorer i ogólną gałąź dla pozostałych kombinacji. Pomaga zrozumieć mechanizm użyty w naszej maszynie stanów z części C.12.
+- [C++ Stories: The overload Pattern](https://www.cppstories.com/2019/02/2lines3featuresoverload.html/) - wyjaśnienie łączenia lambd krok po kroku.
+- [C++ Stories: Everything You Need to Know About std::variant](https://www.cppstories.com/2018/06/variant/) - wprowadzenie i praktyczne zastosowania.
 
-## 4. Dalsza lektura: variant zamiast hierarchii klas
+### Dokumentacja
 
-[Runtime Polymorphism with std::variant and std::visit - C++ Stories](https://www.cppstories.com/2020/04/variant-virtual-polymorphism.html/)
+- [std::visit (funkcja wolna, od C++17)](https://en.cppreference.com/cpp/utility/variant/visit2) - wywoływanie odwiedzającego dla jednego lub wielu wariantów.
+- [std::variant](https://en.cppreference.com/cpp/utility/variant) - operacje i wymagania wariantu.
 
-Porównuje funkcje wirtualne z rozwiązaniem opartym na `variant` i `visit`. Praktyczny przykład buduje HTML z różnych rodzajów etykiet. Warto zajrzeć po części C.13, żeby zobaczyć różnice w projektowaniu programu oraz zalety i ograniczenia obu podejść.
+## 03. Praktyczne zastosowania
 
-Nasz materiał pozostaje przy C++17. Artykuły zawierają też osobno oznaczone rozszerzenia z C++20 i C++23, które można pominąć przy pierwszym czytaniu.
+### Artykuły
+
+- [C++ Stories: Everything You Need to Know About std::variant](https://www.cppstories.com/2018/06/variant/) - wprowadzenie i praktyczne zastosowania.
+- [C++ Stories: std::visit With Multiple Variants](https://www.cppstories.com/2018/09/visit-variants/) - przykład przedmiotów i pudełek, obsługa kombinacji typów.
+
+### Dokumentacja
+
+- [std::variant](https://en.cppreference.com/cpp/utility/variant) - operacje i wymagania wariantu.
+- [std::visit (funkcja wolna, od C++17)](https://en.cppreference.com/cpp/utility/variant/visit2) - wywoływanie odwiedzającego dla jednego lub wielu wariantów.
+- [std::stoi](https://en.cppreference.com/cpp/string/basic_string/stol) - konwersja tekstu na liczbę i zgłaszane wyjątki.
+
+## 04. Pułapki i ograniczenia
+
+### Artykuły
+
+- [C++ Stories: Everything You Need to Know About std::variant](https://www.cppstories.com/2018/06/variant/) - wprowadzenie i praktyczne zastosowania.
+- [C++ Stories: Runtime Polymorphism with std::variant and std::visit](https://www.cppstories.com/2020/04/variant-virtual-polymorphism.html/) - porównanie z funkcjami wirtualnymi.
+
+### Dokumentacja
+
+- [std::monostate](https://en.cppreference.com/cpp/utility/variant/monostate) - jawny pusty stan modelu.
+- [valueless_by_exception](https://en.cppreference.com/cpp/utility/variant/valueless_by_exception) - brak wartości po wyjątku.
+- [Konstruktory std::variant](https://en.cppreference.com/cpp/utility/variant/variant) - wybór alternatywy i konstrukcja in_place.
+- [std::visit (funkcja wolna, od C++17)](https://en.cppreference.com/cpp/utility/variant/visit2) - wywoływanie odwiedzającego dla jednego lub wielu wariantów.
+
+Przykłady materiału korzystają z C++17. Artykuły i bieżąca dokumentacja opisują także późniejsze standardy; zwracaj uwagę na oznaczenia wersji.
